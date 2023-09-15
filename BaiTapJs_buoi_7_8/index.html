@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="project">
+      <div class="container">
+        <!--  -->
+        <br />
+        <div class="themSo">
+          <div class="col-12 col-lg-6">
+            <input
+              type="number"
+              class="form-control"
+              id="number"
+              placeholder="Nhập số n"
+            />
+          </div>
+          <div class="col-12 col-lg-6">
+            <button
+              class="btn btn-primary me-1 mb-1"
+              type="button"
+              onclick="addNumber()"
+            >
+              Thêm số
+            </button>
+          </div>
+        </div>
+        <br />
+        <div id="output-list" class="alert alert-success" role="alert">
+          👉<span></span>
+        </div>
+        <!--  -->
+        <div class="project__tab">
+          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                id="pills-bai1-tab"
+                data-toggle="pill"
+                href="#pills-bai1"
+                role="tab"
+                aria-controls="pills-bai1"
+                aria-selected="true"
+                >Bài 1</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                id="pills-bai2-tab"
+                data-toggle="pill"
+                href="#pills-bai2"
+                role="tab"
+                aria-controls="pills-bai2"
+                aria-selected="false"
+                >Bài 2</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                id="pills-bai3-tab"
+                data-toggle="pill"
+                href="#pills-bai3"
+                role="tab"
+                aria-controls="pills-bai3"
+                aria-selected="false"
+                >Bài 3</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                id="pills-bai4-tab"
+                data-toggle="pill"
+                href="#pills-bai4"
+                role="tab"
+                aria-controls="pills-bai4"
+                aria-selected="false"
+                >Bài 4</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                id="pills-bai5-tab"
+                data-toggle="pill"
+                href="#pills-bai5"
+                role="tab"
+                aria-controls="pills-bai4"
+                aria-selected="false"
+                >Bài 5</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                id="pills-bai6-tab"
+                data-toggle="pill"
+                href="#pills-bai6"
+                role="tab"
+                aria-controls="pills-bai6"
+                aria-selected="false"
+                >Bài 6</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                id="pills-bai7-tab"
+                data-toggle="pill"
+                href="#pills-bai7"
+                role="tab"
+                aria-controls="pills-bai7"
+                aria-selected="false"
+                >Bài 7</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                id="pills-bai8-tab"
+                data-toggle="pill"
+                href="#pills-bai8"
+                role="tab"
+                aria-controls="pills-bai8"
+                aria-selected="false"
+                >Bài 8</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                id="pills-bai9-tab"
+                data-toggle="pill"
+                href="#pills-bai9"
+                role="tab"
+                aria-controls="pills-bai9"
+                aria-selected="false"
+                >Bài 9</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                id="pills-bai10-tab"
+                data-toggle="pill"
+                href="#pills-bai10"
+                role="tab"
+                aria-controls="pills-bai10"
+                aria-selected="false"
+                >Bài 10</a
+              >
+            </li>
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <!-- Bài 1 -->
+            <div
+              class="tab-pane fade show active"
+              id="pills-bai1"
+              role="tabpanel"
+              aria-labelledby="pills-bai1-tab"
+            >
+              <div class="content">
+                <label for="">Tổng số dương</label>
+                <br />
+                <button
+                  class="btn btn-danger"
+                  onclick="tongCacSoNguyenDuong(array)"
+                >
+                  Tính tổng
+                </button>
+                <div id="tong" class="mt-3 alert alert-success">
+                  👉 <span></span>
+                </div>
+              </div>
+            </div>
+            <!-- Bài 2 -->
+            <div
+              class="tab-pane fade"
+              id="pills-bai2"
+              role="tabpanel"
+              aria-labelledby="pills-bai2-tab"
+            >
+              <div class="content">
+                <label for="">Đếm số dương</label>
+                <br />
+                <button
+                  class="btn btn-danger"
+                  onclick="tongSoNguyenDuong(array)"
+                >
+                  Đếm số
+                </button>
+                <div id="demSoDuong" class="mt-3 alert alert-success">
+                  👉 <span></span>
+                </div>
+              </div>
+            </div>
+            <!-- Bài 3 -->
+            <div
+              class="tab-pane fade"
+              id="pills-bai3"
+              role="tabpanel"
+              aria-labelledby="pills-bai3-tab"
+            >
+              <div class="content">
+                <label for="">Tìm số nhỏ nhất</label>
+                <br />
+                <button class="btn btn-danger" onclick="timSoNhoNhat(array)">
+                  Tìm số nhỏ nhất
+                </button>
+                <div id="soNhoNhat" class="mt-3 alert alert-success">
+                  👉 <span></span>
+                </div>
+              </div>
+            </div>
+            <!-- Bài 4 -->
+            <div
+              class="tab-pane fade"
+              id="pills-bai4"
+              role="tabpanel"
+              aria-labelledby="pills-bai4-tab"
+            >
+              <div class="content">
+                <label for="">Tìm số dương nhỏ nhất</label>
+                <br />
+                <button
+                  class="btn btn-danger"
+                  onclick=" timSoDuongNhoNhat(array)"
+                >
+                  Tìm số dương nhỏ nhất
+                </button>
+                <div id="soDuongNhoNhat" class="mt-3 alert alert-success">
+                  👉 <span></span>
+                </div>
+              </div>
+            </div>
+            <!-- Bài 5-->
+            <div
+              class="tab-pane fade"
+              id="pills-bai5"
+              role="tabpanel"
+              aria-labelledby="pills-bai5-tab"
+            >
+              <div class="content">
+                <label for="">Tìm số chẵn cuối cùng</label>
+                <br />
+                <button
+                  class="btn btn-danger"
+                  onclick="timSoChanCuoiCung(array)"
+                >
+                  Tìm số chẵn cuối cùng
+                </button>
+                <div id="soChanCuoiCung" class="mt-3 alert alert-success">
+                  👉 <span></span>
+                </div>
+              </div>
+            </div>
+            <!-- Bài 6 -->
+            <div
+              class="tab-pane fade"
+              id="pills-bai6"
+              role="tabpanel"
+              aria-labelledby="pills-bai6-tab"
+            >
+              <div class="content">
+                <div class="group">
+                  <input
+                    type="number"
+                    class="form-control mr-3"
+                    id="index1"
+                    placeholder="Nhập vị trí số 1"
+                  />
+
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="index2"
+                    placeholder="Nhập vị trí số 2"
+                  />
+                </div>
+                <br />
+                <label for="">Đổi chỗ</label>
+                <br />
+                <button class="btn btn-danger" onclick="doiViTri(array)">
+                  Đổi chỗ
+                </button>
+                <div id="mangSauKhiDoi" class="mt-3 alert alert-success">
+                  👉 <span></span>
+                </div>
+              </div>
+            </div>
+            <!-- Bài 7 -->
+            <div
+              class="tab-pane fade"
+              id="pills-bai7"
+              role="tabpanel"
+              aria-labelledby="pills-bai7-tab"
+            >
+              <div class="content">
+                <label for="">Sắp xếp tăng dần</label>
+                <br />
+                <button class="btn btn-danger" onclick="sapXepTangDan(array)">
+                  Sắp xếp
+                </button>
+                <div id="mangSauKhiSapXep" class="mt-3 alert alert-success">
+                  👉 <span></span>
+                </div>
+              </div>
+            </div>
+            <!-- Bài 8 -->
+            <div
+              class="tab-pane fade"
+              id="pills-bai8"
+              role="tabpanel"
+              aria-labelledby="pills-bai8-tab"
+            >
+              <div class="content">
+                <label for="">Tìm số nguyên tố đầu tiên</label>
+                <br />
+                <button
+                  class="btn btn-danger"
+                  onclick="timSoNguyenToDauTien(array)"
+                >
+                  Số nguyên tố đầu tiên
+                </button>
+                <div id="soNguyenToDauTien" class="mt-3 alert alert-success">
+                  👉 <span></span>
+                </div>
+              </div>
+            </div>
+            <!-- Bài 9 -->
+            <div
+              class="tab-pane fade"
+              id="pills-bai9"
+              role="tabpanel"
+              aria-labelledby="pills-bai9-tab"
+            >
+              <div class="content">
+                <label for="">Đếm số nguyên</label>
+                <br />
+                <button class="btn btn-danger" onclick="laySoNguyen(array)">
+                  Đếm số
+                </button>
+                <div id="soNguyen" class="mt-3 alert alert-success">
+                  👉 <span></span>
+                </div>
+              </div>
+            </div>
+            <!-- Bài 10 -->
+            <div
+              class="tab-pane fade"
+              id="pills-bai10"
+              role="tabpanel"
+              aria-labelledby="pills-bai10-tab"
+            >
+              <div class="content">
+                <label for="">So sánh số lượng số âm và số dương</label>
+                <br />
+                <button
+                  class="btn btn-danger"
+                  onclick="soSanhSoLuongAmDuong(array)"
+                >
+                  So sánh
+                </button>
+                <div id="soSanh" class="mt-3 alert alert-success">
+                  👉 <span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript --->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
